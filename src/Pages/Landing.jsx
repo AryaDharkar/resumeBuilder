@@ -1,6 +1,4 @@
 import React from "react";
-import resumeImage from "./resumeImage.png";
-import landingImage3 from "./landingImage3.png";
 import landingImage4 from "./landingImage4.png";
 import "../App.css";
 
@@ -8,7 +6,7 @@ const Landing = () => {
   return (
     <div>
       {/* Main Hero Section */}
-      <div className="hero-background rounded-xl flex flex-col md:flex-row w-full p-7 md:px-10 mx-auto mt-10 max-w-screen-xl">
+      <div className="hero-background flex flex-col md:flex-row w-full p-7 md:px-10 mx-auto mt-10 max-w-screen-2xl">
         {/* Left Section */}
         <div className="landing-left hidden md:flex md:w-1/2 w-full text-justify">
           <img src={landingImage4} alt="landingImage" className="min-h-96" />

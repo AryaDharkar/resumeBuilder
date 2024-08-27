@@ -1,7 +1,6 @@
-body {
+.hero-background {
   width: 100%;
   margin: auto;
-  border-radius: 10px;
 
   /* background-image: url("/public/BkgImage.jpg"); */
   background: rgb(94, 234, 228);
