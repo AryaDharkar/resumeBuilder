@@ -13,6 +13,14 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/templates" element={<Templates />} />
         <Route path="/steps" element={<StepsToBuild />} />
+        <Route
+          path="*"
+          element={
+            <center>
+              <h1>Error 404</h1>
+            </center>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

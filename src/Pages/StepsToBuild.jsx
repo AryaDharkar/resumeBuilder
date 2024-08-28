@@ -58,12 +58,12 @@ function StepsToBuild() {
 
         {/* Image & Button Section (Right) */}
         <div className="w-full md:w-1/3 flex flex-col items-center">
-          <div className="w-60 h-72 bg-gray-200 flex items-center justify-center shadow-md rounded-lg mb-6">
+          <div className="w-60 h-72 bg-gray-200 flex items-center justify-center shadow-md rounded-lg mb-6 hidden lg:flex">
             {/* This is where you can put the image or placeholder */}
             <img
               src={resumeImage}
               alt="Resume Example"
-              className="w-60 h-72 object-cover shadow-xl"
+              className="w-60 h-72 object-cover shadow-xl hidden lg:flex"
             />
           </div>
 
