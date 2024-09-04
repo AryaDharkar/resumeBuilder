@@ -3,12 +3,12 @@
   margin: auto;
 
   /* background-image: url("/public/BkgImage.jpg"); */
-  background: rgb(94, 234, 228);
+  background: rgb(61, 67, 219);
   background: linear-gradient(
-    90deg,
-    rgba(94, 234, 228, 1) 0%,
-    rgba(192, 124, 234, 0.8744747899159664) 54%,
-    rgba(252, 156, 248, 1) 100%
+    0deg,
+    rgb(165, 205, 249) 0%,
+    rgb(22, 84, 207) 70%,
+    rgb(41, 32, 164) 100%
   );
 }
 .landing-image {

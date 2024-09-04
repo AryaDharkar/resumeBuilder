@@ -1,36 +1,37 @@
 import React from "react";
 import landingImage4 from "./landingImage4.png";
 import "../App.css";
-
+import SubjectIcon from "@mui/icons-material/Subject";
 const Landing = () => {
   return (
     <div>
       {/* Main Hero Section */}
-      <div className="hero-background flex flex-col md:flex-row w-full p-7 md:px-10 mx-auto mt-10 max-w-screen-2xl">
+      <div className="hero-background justify-center flex flex-col md:flex-row w-full p-7 md:px-10 mx-auto py-10 lg:pb-10 pb-40 max-w-screen-2xl">
         {/* Left Section */}
-        <div className="landing-left hidden md:flex md:w-1/2 w-full text-justify">
+        {/* <div className="landing-left hidden md:flex md:w-1/2 w-full text-justify">
           <img
             src={landingImage4}
             alt="landingImage"
             className="ml-10 min-h-96"
           />
-        </div>
+        </div> */}
 
         {/* Right Section */}
-        <div className="landing-right flex flex-col items-center md:items-center p-6 md:p-10 w-full md:w-1/2">
-          <h1 className="text-4xl md:text-5xl text-black font-serif mb-6 text-center md:text-left">
+        <div className="landing-right flex flex-col items-center md:items-center p-6 md:p-6 w-full md:w-1/2">
+          <h1 className="text-3xl md:text-4xl text-white font-serif mb-6 text-center md:text-left">
             Free Resume Builder
           </h1>
-          <button className="bg-gray-800 border-2 border-black text-white px-6 mt-10 mb-12 py-3 rounded-lg text-3xl font-semibold hover:text-blue-600 transition-colors duration-200">
+          <button className="bg-gray-800 border-2 border-black text-white px-6 mt-6 mb-6 py-3 rounded-lg text-2xl font-semibold hover:text-blue-600 transition-colors duration-200">
             <a href="/steps">Build My Resume</a>
           </button>
-          <h1 className="text-2xl md:text-3xl text-black font-serif mb-6 text-center md:text-left">
+          <SubjectIcon color="action" sx={{ fontSize: 150 }} />
+          <h1 className="text-2xl mt-6 md:text-2xl text-white font-serif mb-6 text-center md:text-left">
             Unlimited Resumes
           </h1>
-          <h1 className="text-2xl md:text-3xl text-black font-serif mb-6 text-center md:text-left">
+          <h1 className="text-2xl md:text-2xl text-white font-serif mb-6 text-center md:text-left">
             Multiple Templates
           </h1>
-          <h1 className="text-2xl md:text-3xl text-black font-serif mb-6 text-center md:text-left">
+          <h1 className="text-2xl md:text-2xl text-white font-serif mb-6 text-center md:text-left">
             Gen AI Support
           </h1>
         </div>

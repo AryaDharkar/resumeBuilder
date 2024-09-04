@@ -4,7 +4,7 @@ function Templates() {
   return (
     <>
       <div className="min-h-screen hero-background p-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-700">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-100">
           Select Your Resume
         </h1>
 
