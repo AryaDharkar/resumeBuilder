@@ -14,3 +14,7 @@
 .landing-image {
   object-fit: contain;
 }
+/* This style is for the custom radio button */
+input[type="radio"].peer:checked + label span {
+  border-color: black;
+}
