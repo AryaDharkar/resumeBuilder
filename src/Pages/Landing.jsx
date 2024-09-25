@@ -1,45 +1,34 @@
 import React from "react";
-import landingImage4 from "./landingImage4.png";
+import landingImage from "./resImgFinal.jpg";
 import "../App.css";
 import SubjectIcon from "@mui/icons-material/Subject";
 const Landing = () => {
   return (
     <div>
       {/* Main Hero Section */}
-      <div className="hero-background justify-center flex flex-col md:flex-row w-full p-7 md:px-10 mx-auto py-10 lg:pb-10 pb-40 max-w-screen-2xl">
-        {/* Left Section */}
-        {/* <div className="landing-left hidden md:flex md:w-1/2 w-full text-justify">
-          <img
-            src={landingImage4}
-            alt="landingImage"
-            className="ml-10 min-h-96"
-          />
-        </div> */}
-
-        {/* Right Section */}
-        <div className="landing-right flex flex-col items-center md:items-center p-6 md:p-6 w-full md:w-1/2">
-          <h1 className="text-3xl md:text-4xl text-white font-serif mb-6 text-center md:text-left">
-            Free Resume Builder
+      <div className="justify-center flex flex-col md:flex-row w-full px-7 md:px-10 mx-auto pt-10 lg:pb-10 lg:w-full lg:pt-10">
+        <div className="landing-right flex flex-col items-center md:items-center p-6 md:p-6 w-full md:w-1/2 lg:w-3/4">
+          <h1 className="font-opensans 2xl:text-7xl xl:text-5xl lg:text-5xl text-4xl md:text-4xl text-black text-center">
+            Free <span className="resume-word-gradient">Resume</span> Builder.
+            Create your free resume online.
           </h1>
-          <button className="bg-gray-800 border-2 border-black text-white px-6 mt-6 mb-6 py-3 rounded-lg text-2xl font-semibold hover:text-blue-600 transition-colors duration-200">
-            <a href="/steps">Build My Resume</a>
-          </button>
-          <SubjectIcon color="action" sx={{ fontSize: 150 }} />
-          <h1 className="text-2xl mt-6 md:text-2xl text-white font-serif mb-6 text-center md:text-left">
+
+          {/* <SubjectIcon color="action" sx={{ fontSize: 150 }} /> */}
+          {/* <h1 className="text-2xl mt-6 md:text-2xl text-black font-serif mb-6 text-center md:text-left">
             Unlimited Resumes
           </h1>
-          <h1 className="text-2xl md:text-2xl text-white font-serif mb-6 text-center md:text-left">
+          <h1 className="text-2xl md:text-2xl text-black font-serif mb-6 text-center md:text-left">
             Multiple Templates
           </h1>
-          <h1 className="text-2xl md:text-2xl text-white font-serif mb-6 text-center md:text-left">
+          <h1 className="text-2xl md:text-2xl text-black font-serif mb-6 text-center md:text-left">
             Gen AI Support
-          </h1>
+          </h1> */}
         </div>
       </div>
       {/* Feature Section */}
-      <div className="feature-section w-full flex flex-col items-center p-5 md:p-10">
+      <div className="feature-section w-full flex flex-col items-center md:p-10 lg:p-0">
         {/* Feature 1 */}
-        <p className="text-lg md:text-xl text-gray-800 text-center max-w-2xl">
+        <p className="text-lg 2xl:text-2xl md:text-xl text-gray-800 text-center w-3/4 md:w-full max-w-7xl">
           Our online resume builder offers a quick and easy way to create your
           professional resume from multiple design templates. Create a resume
           using our AI resume builder feature, plus take advantage of expert
@@ -47,6 +36,16 @@ const Landing = () => {
           All the users have complete descretion to customize their resume as
           per their choice and no charges are applied for the same.
         </p>
+        <button className="buildMyResume-button bg-blue-600 font-semibold mt-10">
+          <a href="/steps">Build Now</a>
+        </button>
+        <div className="w-3/4">
+          <img
+            src={landingImage}
+            alt="image"
+            className="h-3/4 object-cover w-full rounded-lg hover:scale-105 hover:shadow-stone-400 hover:shadow-lg my-10 transition-transform duration-400 "
+          />
+        </div>
 
         {/* Feature 2 */}
         <button className="bg-black text-white px-6 py-3 mt-6 rounded-lg text-lg hover:text-blue-600 transition-colors duration-200">

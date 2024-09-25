@@ -18,3 +18,28 @@
 input[type="radio"].peer:checked + label span {
   border-color: black;
 }
+
+.font-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.resume-word-gradient {
+  background: -webkit-linear-gradient(#a020f0, #ffc0cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buildMyResume-button {
+  /* background: linear-gradient(90deg, #a020f0 0%, #ffc0cb 100%); */
+  /* background-color: blue; */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2vw;
+  margin: 15px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
