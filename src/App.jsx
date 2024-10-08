@@ -5,6 +5,7 @@ import StepsToBuild from "./Pages/StepsToBuild";
 import Navbar from "./Components/Navbar";
 import WorkExperience from "./Pages/WorkExperience";
 import NotFound from "./Pages/NotFound";
+import SelectedTemplate from "./Pages/Templates";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/templates" element={<Templates />} />
         <Route path="/steps" element={<StepsToBuild />} />
         <Route path="/workexperience" element={<WorkExperience />} />
+        <Route path="/template" element={<SelectedTemplate />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
