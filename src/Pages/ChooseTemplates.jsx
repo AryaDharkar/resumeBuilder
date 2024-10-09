@@ -1,10 +1,12 @@
 import ResumeImage from "./landingImage.png";
+import { useNavigate } from "react-router-dom";
 
 function Templates() {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="min-h-screen hero-background p-8">
-        <h1 className="text-4xl font-thin font-serif text-center mb-8 text-gray-100">
+      <div className="min-h-screen p-8">
+        <h1 className="text-4xl font-thin font-serif text-center mb-8">
           Select Your Resume
         </h1>
 
@@ -28,7 +30,10 @@ function Templates() {
         </div>
 
         <div className="mt-8 text-center">
-          <button className="bg-gray-800 text-white text-2xl mt-8 py-2 px-4 rounded-lg shadow-md hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          <button
+            className="bg-gray-800 text-white text-2xl mt-8 py-2 px-4 rounded-lg shadow-md hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            onClick={() => navigate("/UserData")}
+          >
             Choose Resume
           </button>
         </div>
