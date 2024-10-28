@@ -99,17 +99,17 @@ export default function Template2() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg">
+    <div className="text-sm">
       <div className="grid grid-cols-2 gap-8">
         {/* Left Column */}
         <div className="space-y-8">
           {/* Header */}
           <header className="flex items-center">
-            <img
+            {/* <img
               src={data.photo}
               alt={data.name}
               className="w-32 h-32 rounded-full mr-8"
-            />
+            /> */}
             <div>
               <h1 className="text-4xl font-bold">{data.name}</h1>
               <p className="text-xl text-gray-600">{data.title}</p>

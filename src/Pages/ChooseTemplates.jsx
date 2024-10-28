@@ -1,8 +1,21 @@
 import ResumeImage from "./landingImage.png";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Templates() {
   const navigate = useNavigate();
+  const [selectedTemplate, setSelectedTemplate] = useState(-1);
+
+  const handleTemplateClick = (index) => {
+    setSelectedTemplate(index);
+    console.log(index);
+
+    // Save selectedTemplate to localStorage userData object
+    const userData = JSON.parse(localStorage.getItem('userData')) || {};
+    userData.selectedTemplate = index;
+    localStorage.setItem('userData', JSON.stringify(userData));
+  };
+
   return (
     <>
       <div className="min-h-screen p-8">
@@ -11,18 +24,16 @@ function Templates() {
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {Array.from({ length: 8 }).map((_, index) => (
+          {Array.from({ length: 2 }).map((_, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg"
+              onClick={() => handleTemplateClick(index)}
+              className={`bg-white border-1 border-gray-400 p-6 rounded-lg shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:border-2 hover:shadow-lg ${selectedTemplate === index ? "border-blue-400 border-2" : ""}`}
             >
-              {/* Placeholder for image */}
               <div className="w-full h-80 rounded-lg mb-4 flex items-center justify-center">
-                {/* <span className="text-gray-500 text-lg">Image</span> */}
                 <img src={ResumeImage} alt="Resume Template" className="" />
               </div>
-              {/* Template label */}
-              <span className="text-xl font-semibold text-gray-800">
+              <span className={`text-xl ${selectedTemplate === index ? "font-bold" : "font-semibold"} text-gray-800`}>
                 Template {index + 1}
               </span>
             </div>
@@ -41,4 +52,5 @@ function Templates() {
     </>
   );
 }
+
 export default Templates;
