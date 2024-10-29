@@ -36,7 +36,7 @@ const Landing = () => {
           All the users have complete descretion to customize their resume as
           per their choice and no charges are applied for the same.
         </p>
-        <button className="buildMyResume-button bg-blue-600 font-semibold mt-10">
+        <button className="buildMyResume-button bg-blue-600 font-semibold mt-10 text-sm">
           <a href="/steps">Build Now</a>
         </button>
         <div className="w-3/4">

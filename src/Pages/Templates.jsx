@@ -4,7 +4,7 @@ import Template2 from "../Templates/Template2";
 const SelectedTemplate = () => {
   return (
     <>
-      <Template1 />
+      {/* <Template1 /> */}
       <br />
       <hr />
       <br />

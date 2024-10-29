@@ -10,93 +10,71 @@ import {
   Code,
 } from "lucide-react";
 
-export default function Template2() {
+export default function Template2({ data }) {
   // Dummy data (you can replace this with props or fetch from an API)
-  const data = {
-    name: "John Doe",
-    title: "Full Stack Developer",
-    photo: "/placeholder.svg?height=200&width=200",
-    contact: {
-      email: "john.doe@example.com",
-      phone: "+1 (555) 123-4567",
-      location: "New York, NY",
-    },
-    summary:
-      "Experienced Full Stack Developer with a passion for creating efficient, scalable, and user-friendly web applications. Skilled in JavaScript, React, Node.js, and database management.",
-    experience: [
-      {
-        title: "Senior Full Stack Developer",
-        company: "Tech Innovators Inc.",
-        date: "2019 - Present",
-        responsibilities: [
-          "Lead development of complex web applications using React and Node.js",
-          "Implement and maintain RESTful APIs and microservices",
-          "Mentor junior developers and conduct code reviews",
-        ],
-      },
-      {
-        title: "Full Stack Developer",
-        company: "WebSolutions Co.",
-        date: "2016 - 2019",
-        responsibilities: [
-          "Developed and maintained multiple client websites",
-          "Collaborated with design team to implement responsive UI/UX",
-          "Optimized database queries and improved application performance",
-        ],
-      },
-    ],
-    education: [
-      {
-        degree: "Bachelor of Science in Computer Science",
-        school: "University of Technology",
-        date: "2012 - 2016",
-      },
-    ],
-    skills: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "SQL",
-      "Git",
-      "AWS",
-      "Docker",
-      "TypeScript",
-    ],
-    projects: [
-      {
-        name: "E-commerce Platform",
-        description:
-          "Developed a full-featured e-commerce platform with user authentication, product management, and payment integration.",
-        technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      },
-      {
-        name: "Task Management App",
-        description:
-          "Created a real-time task management application with collaborative features and data visualization.",
-        technologies: [
-          "React",
-          "Socket.io",
-          "Express",
-          "PostgreSQL",
-          "Chart.js",
-        ],
-      },
-    ],
-    certifications: [
-      {
-        name: "AWS Certified Developer - Associate",
-        issuer: "Amazon Web Services",
-        date: "2021",
-      },
-      {
-        name: "MongoDB Certified Developer",
-        issuer: "MongoDB University",
-        date: "2020",
-      },
-    ],
-  };
+  // const data = {
+  //   "name": "Mithil Salunkhe",
+  //   "title": "Linux Engineer",
+  //   "photo": "",
+  //   "contact": {
+  //     "email": "mithilsalunke@gmail.com",
+  //     "phone": "9653141218",
+  //     "location": "Mulund, Maharashtra"
+  //   },
+  //   "summary": "Senior Linux Engineer with expertise in chipset driver development and system optimization, backed by Red Hat certification.",
+  //   "experience": [
+  //     {
+  //       "title": "Linux Engineer",
+  //       "company": "AMD",
+  //       "date": "2024-01 - 2024-11",
+  //       "responsibilities": [
+  //         "Designed and developed optimized AMD chipset drivers, ensuring compatibility with various GPU configurations.",
+  //         "Enhanced Linux support for AMD CPUs, significantly improving overall system performance and reliability."
+  //       ]
+  //     },
+  //     {
+  //       "title": "Linux Engineer",
+  //       "company": "lksjdf",
+  //       "date": "2024-01 - 2024-02",
+  //       "responsibilities": [
+  //         "",
+  //         ""
+  //       ]
+  //     }
+  //   ],
+  //   "educationDetails": [
+  //     {
+  //       "degree": "BTech",
+  //       "institution": "Terna",
+  //       "year": "2026"
+  //     }
+  //   ],
+  //   "skills": [
+  //     "C",
+  //     "C++",
+  //     "Bash",
+  //     "Linux"
+  //   ],
+  //   "projects": [
+  //     {
+  //       "projectName": "Linux From Scratch",
+  //       "description": "Built an LFS system following the latest guide which has multiple package manager support like apt, pacman, dnf",
+  //       "technologies": [
+  //         "Linux",
+  //         "Bash"
+  //       ],
+  //       "startDate": "2023-01",
+  //       "endDate": "2023-12"
+  //     }
+  //   ],
+  //   "certifications": [
+  //     {
+  //       "name": "Red Hat® Certified System Administrator (RHCSA®)",
+  //       "issuer": "Red Hat",
+  //       "date": "2024-10"
+  //     }
+  //   ]
+  // };
 
   return (
     <div className="text-sm">
@@ -156,17 +134,17 @@ export default function Template2() {
             </div>
           </section>
 
-          {/* Education */}
+          {/* educationDetails */}
           <section>
             <h2 className="text-2xl font-semibold mb-4">Education</h2>
-            {data.education.map((edu, index) => (
+            {data.educationDetails.map((edu, index) => (
               <div key={index} className="mb-4">
                 <h3 className="text-xl font-semibold">{edu.degree}</h3>
                 <div className="flex items-center text-gray-600 mb-2">
                   <GraduationCap className="w-4 h-4 mr-2" />
-                  <span>{edu.school}</span>
+                  <span>{edu.institution}</span>
                   <Calendar className="w-4 h-4 ml-4 mr-2" />
-                  <span>{edu.date}</span>
+                  <span>{edu.year}</span>
                 </div>
               </div>
             ))}

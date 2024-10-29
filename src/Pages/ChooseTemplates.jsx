@@ -11,9 +11,9 @@ function Templates() {
     console.log(index);
 
     // Save selectedTemplate to localStorage userData object
-    const userData = JSON.parse(localStorage.getItem('userData')) || {};
+    const userData = {};
     userData.selectedTemplate = index;
-    localStorage.setItem('userData', JSON.stringify(userData));
+    localStorage.setItem("userData", JSON.stringify(userData));
   };
 
   return (
@@ -28,12 +28,18 @@ function Templates() {
             <div
               key={index}
               onClick={() => handleTemplateClick(index)}
-              className={`bg-white border-1 border-gray-400 p-6 rounded-lg shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:border-2 hover:shadow-lg ${selectedTemplate === index ? "border-blue-400 border-2" : ""}`}
+              className={`bg-white border-1 border-gray-400 p-6 rounded-lg shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:border-2 hover:shadow-lg ${
+                selectedTemplate === index ? "border-blue-400 border-2" : ""
+              }`}
             >
               <div className="w-full h-80 rounded-lg mb-4 flex items-center justify-center">
                 <img src={ResumeImage} alt="Resume Template" className="" />
               </div>
-              <span className={`text-xl ${selectedTemplate === index ? "font-bold" : "font-semibold"} text-gray-800`}>
+              <span
+                className={`text-xl ${
+                  selectedTemplate === index ? "font-bold" : "font-semibold"
+                } text-gray-800`}
+              >
                 Template {index + 1}
               </span>
             </div>

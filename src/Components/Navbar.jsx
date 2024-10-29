@@ -7,7 +7,6 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "Steps", link: "/steps" },
     { name: "Templates", link: "/templates" },
-    { name: "Template", link: "/template" },
   ];
 
   // This function simulates the behavior of checking the current path
